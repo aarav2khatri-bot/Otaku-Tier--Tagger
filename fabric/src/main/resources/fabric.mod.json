@@ -1,5 +1,36 @@
-"id": "otaku-tier-tagger",
-"version": "1.0.0",
-"name": "Otaku Tiers Tier Tagger",
-"description": "Otaku Tiers version of TierTagger by NoobieChips",
-"authors": ["NoobieChips"]
+{
+  "schemaVersion": 1,
+  "id": "otaku-tier-tagger",
+  "version": "${version}",
+
+  "name": "Otaku Tiers Tier Tagger",
+  "description": "Otaku Tiers version of TierTagger - Fork by NoobieChips (aarav2khatri-bot)",
+  "authors": [
+    "NoobieChips"
+  ],
+  "contact": {
+    "homepage": "https://github.com/aarav2khatri-bot/Otaku-Tier--Tagger"
+  },
+
+  "license": "MPL-2.0",
+  "icon": "assets/otaku-tier-tagger/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.uku3lig.tiertagger.TierTaggerClient"
+    ],
+    "main": [
+      "net.uku3lig.tiertagger.TierTagger"
+    ]
+  },
+  "mixins": [
+    "tiertagger.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "\~1.21",
+    "ukulib": "*"
+  }
+}
